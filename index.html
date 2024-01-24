@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HilFlix</title>
+    <!-- LINK TO CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- ICONS LINK CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="" class="logo"
+        ><i class="ri-vidicon-fill"></i><span>LOGO</span></a
+      >
+
+      <ul class="navbar">
+        <li><a href="" class="active">HOME</a></li>
+        <li><a href="#filter">MOVIES</a></li>
+        <li><a href="">SERIES</a></li>
+        <li><a href="">TRENDING</a></li>
+      </ul>
+
+      <div class="main">
+        <a href="" class="user"><i class="ri-heart-fill"></i><span>0</span></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </header>
+
+    <article class="hero">
+      <h3>Lost Identity</h3>
+      <p>
+        A person awakens with no memory of their past, embarking on a perilous
+        quest to uncover their true identity. Pursued by ruthless adversaries,
+        they must evade capture while piecing together clues from their
+        fragmented memories.
+      </p>
+      <div class="hero-cta">
+        <button><i class="ri-play-fill"></i><a href="#">Watch</a></button>
+      </div>
+    </article>
+
+    <article id="filter">
+      <div class="filter-bar">
+        <div class="filter-options">
+          <div class="dropdown-filter">
+            <div class="drop-toggle" id="btn">
+              <i class="ri-filter-3-fill"></i>
+              <span>All genres</span>
+            </div>
+
+            <div class="dropdown" id="dropdown">
+              <a onclick="filterSelection('action')"> Action </a>
+              <a onclick="filterSelection('comedy')"> Comedy </a>
+              <a onclick="filterSelection('adventure')"> Adventure </a>
+              <a onclick="filterSelection('horror')"> Horror </a>
+              <a onclick="filterSelection('cartoon')"> Cartoon </a>
+              <a onclick="filterSelection('kids')"> Kids </a>
+            </div>
+          </div>
+          <div class="filter-btns" id="myBtnContainer">
+            <a class="btn" onclick="filterSelection('all')">All</a>
+            <a class="btn" onclick="filterSelection('new')">New</a>
+            <a class="btn" onclick="filterSelection('trending')">Trending</a>
+            <a class="btn" onclick="filterSelection('originals')">Originals</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="movies" id="movies">
+        <div class="content_img filterDiv new action">
+          <img src="images/cover1.jpg" alt="" />
+          <div>
+            <h4>Cover</h4>
+
+            A fearless renegade battles a shadowy organization in a
+            heart-pounding action movie. Explosive stunts, relentless combat,
+            and jaw-dropping choreography deliver an adrenaline-fueled thrill
+            ride that leaves audiences craving more.
+            <a href="#" class="likes"><i class="ri-heart-fill"></i></a>
+          </div>
+        </div>
+        <div class="content_img filterDiv trending horror">
+          <img src="images/cover2.jpg" alt="" />
+          <div>
+            A fearless renegade battles a shadowy organization in a
+            heart-pounding action movie. Explosive stunts, relentless combat,
+            and jaw-dropping choreography deliver an adrenaline-fueled thrill
+            ride that leaves audiences craving more.
+            <a href="#" class="likes"><i class="ri-heart-fill"></i></a>
+          </div>
+        </div>
+        <div class="content_img filterDiv originals action">
+          <img src="images/cover3.png" alt="" />
+          <div>
+            A fearless renegade battles a shadowy organization in a
+            heart-pounding action movie. Explosive stunts, relentless combat,
+            and jaw-dropping choreography deliver an adrenaline-fueled thrill
+            ride that leaves audiences craving more.
+            <a href="#" class="likes"><i class="ri-heart-fill"></i></a>
+          </div>
+        </div>
+        <div class="content_img filterDiv new adventure">
+          <img src="images/cover4.jpg" alt="" />
+          <div>
+            A fearless renegade battles a shadowy organization in a
+            heart-pounding action movie. Explosive stunts, relentless combat,
+            and jaw-dropping choreography deliver an adrenaline-fueled thrill
+            ride that leaves audiences craving more.
+          </div>
+        </div>
+        <div class="content_img filterDiv new action">
+          <img src="images/cover5.jpg" alt="" />
+          <div>
+            A fearless renegade battles a shadowy organization in a
+            heart-pounding action movie. Explosive stunts, relentless combat,
+            and jaw-dropping choreography deliver an adrenaline-fueled thrill
+            ride that leaves audiences craving more.
+          </div>
+        </div>
+        <div class="content_img filterDiv trending kids">
+          <img src="images/cover6.jpg" alt="" />
+          <div>
+            A fearless renegade battles a shadowy organization in a
+            heart-pounding action movie. Explosive stunts, relentless combat,
+            and jaw-dropping choreography deliver an adrenaline-fueled thrill
+            ride that leaves audiences craving more.
+          </div>
+        </div>
+        <div class="content_img filterDiv originals horror">
+          <img src="images/cover7.png" alt="" />
+          <div>
+            A fearless renegade battles a shadowy organization in a
+            heart-pounding action movie. Explosive stunts, relentless combat,
+            and jaw-dropping choreography deliver an adrenaline-fueled thrill
+            ride that leaves audiences craving more.
+          </div>
+        </div>
+        <div class="content_img filterDiv originals adventure">
+          <img src="images/cover8.jpg" alt="" />
+          <div>
+            A fearless renegade battles a shadowy organization in a
+            heart-pounding action movie. Explosive stunts, relentless combat,
+            and jaw-dropping choreography deliver an adrenaline-fueled thrill
+            ride that leaves audiences craving more.
+          </div>
+        </div>
+        <div class="content_img filterDiv trending action">
+          <img src="images/cover9.jpg" alt="" />
+          <div>
+            A fearless renegade battles a shadowy organization in a
+            heart-pounding action movie. Explosive stunts, relentless combat,
+            and jaw-dropping choreography deliver an adrenaline-fueled thrill
+            ride that leaves audiences craving more.
+          </div>
+        </div>
+        <div class="content_img filterDiv new action">
+          <img src="images/cover10.jpg" alt="" />
+          <div>
+            A fearless renegade battles a shadowy organization in a
+            heart-pounding action movie. Explosive stunts, relentless combat,
+            and jaw-dropping choreography deliver an adrenaline-fueled thrill
+            ride that leaves audiences craving more.
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article>
+      <div class="head-text-coming">
+        <h4>COMING SOON!</h4>
+      </div>
+      <div class="coming-soon">
+        <div class="align-soon-text coming-image-1">
+          <h4>UP</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Consequatur, illum?
+          </p>
+          <span><em>Coming in tomorrow!</em></span>
+        </div>
+        <div class="align-soon-text coming-image-2">
+          <h4>BABY DRIVER</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Consequatur, illum?
+          </p>
+          <span><em>Coming in 2 weeks!</em></span>
+        </div>
+        <div class="align-soon-text coming-image-3">
+          <h4>WATCHING YOU</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Consequatur, illum?
+          </p>
+          <span><em>Coming next month!</em></span>
+        </div>
+      </div>
+    </article>
+
+    <!-- JAVASCRIPT LINK -->
+    <script src="script.js"></script>
+  </body>
+</html>

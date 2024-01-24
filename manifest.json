@@ -1,0 +1,39 @@
+{
+    "name": "Dream Team Trading Bot",
+    "version": "0.0.1",
+    "description": "Chrome Extension for EA FC Ultimate Team",
+    "permissions": ["storage", "identity"],
+    "host_permissions": ["https://www.ea.com/ea-sports-fc/ultimate-team/web-app/*", "https://discord.com/api/webhooks/*"],
+    "background": {
+        "service_worker": "./js/background.js",
+        "type": "module"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.ea.com/ea-sports-fc/ultimate-team/web-app/*"],
+            "js": ["./js/content.js"],
+            "css": ["./css/content.css"],
+            "run_at": "document_end"
+        }
+    ],
+    "action": {
+        "default_icon": {
+            "32": "./img/icon/icon32.png",
+            "64": "./img/icon/icon64.png",
+            "128": "./img/icon/icon128.png"
+        },
+        "default_popup": "./html/popup.html"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": ["js/xmJSEwlrtkNTGVqW.js", "js/YrlIJMuXsteJZfUR.js", "audio/*"],
+            "matches": ["https://www.ea.com/*"]
+        }
+    ],
+    "oauth2": {
+        "client_id": "882550386517-g8of701lk6c0lcav1la8a7hqivl5sesd.apps.googleusercontent.com",
+        "scopes": ["https://www.googleapis.com/auth/userinfo.email"]
+    },
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA07NAs/Czz7I5AAW7+V6mf7xPDdRYpl2ATlB3tMAjmt7Z4OZOcJoNccgoAoET+UEyOLqsZYHzU7eD6kfjyYFLfwFR4TJ+SKmRpngvLxB0rwx45P8AioNJlP8yItogZyE3GUPteRkXIVLoNGAe0WHoorbzNJzM/1wd8qpE3SUQNIKsBECVMPAOwUBvM6tjFctEhBlEApDOSLdMmmu0pTaOMRwRWUuoTV+oK7Z1mcAvChTJekt59xnRClc8V5AEAQTMA3NCwNmMPkpXlurnFB7AlrMA6QOdSdNWJLhpMD5yduhSxD9qJpjxBEM5kn6k87o5YXujsO4Saz5JNferGq+mOwIDAQAB",
+    "manifest_version": 3
+}
