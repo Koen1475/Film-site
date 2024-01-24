@@ -491,7 +491,7 @@ div > a {
   background-size: cover;
   border-radius: 20px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("/websites/Filmsite/images/coming1.jpg");
+    url("/images/coming1.jpg");
 }
 
 .coming-image-2 {
@@ -500,7 +500,7 @@ div > a {
   background-size: cover;
   border-radius: 20px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/websites/Filmsite/images/coming1.jpg");
+    url("images/coming1.jpg");
 }
 
 .coming-image-3 {
@@ -509,7 +509,7 @@ div > a {
   background-size: cover;
   border-radius: 20px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/websites/Filmsite/images/coming3.jpg");
+    url("images/coming3.jpg");
 }
 
 .align-soon-text {
